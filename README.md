@@ -40,4 +40,4 @@ My project outlines the purpose, datasets, techniques, and potential impact of d
 - Model - Folder containing the final trained model
 
 ## Deployment
-Final model is deployed on streamlit at : 
+Final model is deployed on streamlit at : https://alzheimers-prediction.streamlit.app
