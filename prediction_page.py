@@ -11,8 +11,6 @@ PTRACCAT_CATEGORIES = ['PTRACCAT_Asian', 'PTRACCAT_Black', 'PTRACCAT_White']
 PTGENDER_CATEGORIES = ['PTGENDER_Female', 'PTGENDER_Male']
 APOE4_CATEGORIES = ['APOE4_0', 'APOE4_1', 'APOE4_2']
 
-user_input = []
-
 
 def prediction_page():
     def convert_to_one_hot(selected_category, all_categories):
@@ -52,27 +50,28 @@ def prediction_page():
 
     if age and education and mmse and apoe_genotype and race_cat and gender and apoe_allele_type and imputed_genotype and ethnicity and predict_button:
         st.write("Thank you for entering the patient's information.")
-        progress_text = "Please wait, we're predicting the clinical condition..."
+        progress_text = "Please wait, we're predicting your clinical condition..."
         my_bar = st.progress(0, text=progress_text)
 
         for percent_complete in range(100):
             time.sleep(0.01)
             my_bar.progress(percent_complete + 1, text=progress_text)
 
-        user_input.append(age)
-        user_input.append(education)
-        user_input.append(mmse)
-
-        convert_to_one_hot(apoe_genotype, APOE_CATEGORIES)
-        convert_to_one_hot("PTETHCAT_" + ethnicity, PTHETHCAT_CATEGORIES)
-        convert_to_one_hot("imputed_genotype_" + imputed_genotype, IMPUTED_CATEGORIES)
+        user_input = [age, education, mmse]
         convert_to_one_hot("PTRACCAT_" + race_cat, PTRACCAT_CATEGORIES)
-        convert_to_one_hot("PTGENDER_" + gender, PTGENDER_CATEGORIES)
+        convert_to_one_hot("APOE Genotype_" + apoe_genotype, APOE_CATEGORIES)
+        convert_to_one_hot("PTETHCAT_" + ethnicity, PTHETHCAT_CATEGORIES)
         convert_to_one_hot(apoe_allele_type, APOE4_CATEGORIES)
+        convert_to_one_hot("PTGENDER_" + gender, PTGENDER_CATEGORIES)
+        convert_to_one_hot("imputed_genotype_" + imputed_genotype, IMPUTED_CATEGORIES)
 
         data = pd.DataFrame([user_input])
         predicted_condition = predict_alzheimer(data)
-
+        abbreviation = {
+            "AD": "Alzheimer's Disease ",
+            "LMCI": "Late Mild Cognitive Impairment ",
+            "CN": "Cognitively Normal"
+        }
         condition_description = {
             "AD": "This indicates that the individual's data aligns with characteristics commonly associated with "
                   "Alzheimer's disease. Alzheimer's disease is a progressive neurodegenerative disorder that affects "
@@ -87,7 +86,6 @@ def prediction_page():
         st.write("")
         st.write("")
         st.subheader("Predicted Clinical Condition:")
-        st.write(f"**{predicted_condition[0]}**")
-
+        st.write(f"**{predicted_condition[0]}** ({abbreviation[predicted_condition[0]]})")
         st.subheader("Condition Description:")
         st.write(condition_description[predicted_condition[0]])
