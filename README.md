@@ -43,11 +43,11 @@ Before you begin, ensure you have the following:
    cd Alzheimers_Prediction_System
    ```
 
-2. Create a virtual environment (recommended):
+2. Create a virtual evironment (recommended):
 
    ```bash
    python3 -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   source venv/bin/activate
    ```
 
 3. Install the required packages:
@@ -75,15 +75,16 @@ Before you begin, ensure you have the following:
 The model was trained on a dataset collected from [Alzheimer’s Disease Neuroimaging Initiative (ADNI) ](https://adni.loni.usc.edu).
 This dataset is a comprehensive collection of clinical, imaging, and genetic data from individuals with Alzheimer's disease.
 
-
 ### Deployment
-Final model is deployed using streamlit at : https://alzheimers-prediction.streamlit.app
+The final Alzheimer's predcition model is deployed on streamlit: [Visit Site](https://alzheimers-prediction.streamlit.app)
+
+### Team
+- [Arpit Sengar](https://github.com/arpy8)
+- [Siddharth Mohril](https://github.com/arpy8)
+- [Aditya Bhardwaj](https://github.com/arpy8)
+- [Harshit Jain](https://github.com/arpy8)
+- [Aditya Jain](https://github.com/arpy8)
 
 ---
 
 Feel free to reach out to me at [arpitsengar99@gmail.com](mailto:arpitsengar99@gmail.com) for any questions or support related to this system. I hope this prediction system proves to be a valuable tool in understanding and predicting Alzheimer's disease.
-
-
-
-
-
