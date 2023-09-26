@@ -59,7 +59,6 @@ Before you begin, ensure you have the following:
 ## Usage Guide
 
 ### Data Input
-
 1. Go to the [web application](https://alzheimers-prediction.streamlit.app) and navigate to the prediction section from the sidebar.
 2. Enter the patient's data as asked.
 3. The prediction system will process the given user data and provide predictions for Alzheimer's likelihood.
@@ -76,15 +75,15 @@ The model was trained on a dataset collected from [Alzheimer’s Disease Neuroim
 This dataset is a comprehensive collection of clinical, imaging, and genetic data from individuals with Alzheimer's disease.
 
 ### Deployment
-The final Alzheimer's predcition model is deployed on streamlit: [Visit Site](https://alzheimers-prediction.streamlit.app)
+The final Alzheimer's predcition model is deployed using streamlit: [Visit Site](https://alzheimers-prediction.streamlit.app)
 
 ### Team
 - [Arpit Sengar](https://github.com/arpy8)
-- [Siddharth Mohril](https://github.com/arpy8)
-- [Aditya Bhardwaj](https://github.com/arpy8)
-- [Harshit Jain](https://github.com/arpy8)
-- [Aditya Jain](https://github.com/arpy8)
+- [Siddharth Mohril](https://github.com/siddharth-mohril)
+- [Aditya Bhardwaj](https://github.com/adityabhardwajjj)
+- [Harshit Jain](https://github.com/harshitjainn)
+- [Aditya Jain](https://github.com/ajhasbeensummoned)
 
 ---
 
-Feel free to reach out to me at [arpitsengar99@gmail.com](mailto:arpitsengar99@gmail.com) for any questions or support related to this system. I hope this prediction system proves to be a valuable tool in understanding and predicting Alzheimer's disease.
+Feel free to reach out to us at [arpitsengar99@gmail.com](mailto:arpitsengar99@gmail.com) for any questions or support related to this system. I hope this prediction system proves to be a valuable tool in understanding and predicting Alzheimer's disease.
