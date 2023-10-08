@@ -1,0 +1,62 @@
+h3 {
+    color: #fff;
+    font-size:1.393rem;
+}
+
+p { 
+    color: #ffffff99;
+    text-shadow: 0px 0px #ffffff99;
+}
+
+a:link {
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
+
+footer {
+    visibility: hidden;
+}
+
+body {
+    background-color: #f8f8f8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#MainMenu {
+    visibility: hidden;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px auto;
+}
+
+.team-member {
+    background-color: #ffffff35;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 200px;
+    height: 130px;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #00000050;
+}
+
+/* button[kind="primary"] {
+    margin-top: 5%;
+    padding: 0 38% 0 39%;
+} */
