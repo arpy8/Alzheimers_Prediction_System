@@ -1,5 +1,5 @@
 # Alzheimer's Disease Prediction
-![banner](assets/banner.png)
+![banner](assets/images/banner.jpg)
 
 ## Table of Contents
 - [Introduction](##introduction)
