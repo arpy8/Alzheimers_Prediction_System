@@ -1,7 +1,7 @@
 import os 
 import streamlit as st
 
-NEWS_API_KEY = st.streamlit["NEWS_API"]
+NEWS_API_KEY = st.secrets["NEWS_API"]
 KEYWORD = "alzheimer"
 
 APOE_CATEGORIES = ['APOE Genotype_2,2', 'APOE Genotype_2,3', 'APOE Genotype_2,4', 'APOE Genotype_3,3',
