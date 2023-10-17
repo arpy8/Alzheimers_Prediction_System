@@ -17,4 +17,4 @@ def home_page():
                 
         """, unsafe_allow_html=True)
 
-    st.caption('Finished reading? Navigate to the Prediction Page using the navbar to make some predictions')
+    st.caption('Finished reading? Navigate to the `Prediction Page` to make some predictions')
