@@ -1,15 +1,15 @@
 import base64
 import streamlit as st
 from config import *
-from streamlit_pages._prediction import prediction_page
-from streamlit_pages._newsapi import news_page
-from streamlit_pages._team import team_members
-from streamlit_pages._home import home_page
-
+from streamlit_pages._home_page import home_page
+from streamlit_pages._predict_alzheimer import prediction_page
+from streamlit_pages._latest_news import news_page
+from streamlit_pages._team_members import team_members  
+from streamlit_pages._chat_page import chat_bot
 
 # SETTING PAGE CONFIG
 # st.set_page_config(
-#     page_title="Alzheimer's Prediction System",
+#     page_title="Alzheimer's Prediction Systems",
 #     page_icon=":brain:",
 # )
 
@@ -27,6 +27,7 @@ def set_page_background(png_file):
         <style>
         .stApp {{
             background-image: url("data:image/png;base64,{bin_str}");
+            width: 100vh;
             }}
         </style>
     '''
@@ -40,7 +41,7 @@ st.sidebar.image(SIDE_BANNER)
 st.sidebar.title("Alzheimer's Prediction System")
 app_mode = st.sidebar.selectbox(
     "Please navigate through the different sections of our website from here",
-    ["Home", "Predict Alzheimer's", "Latest News", "Team Members"],
+    ["Home", "Predict Alzheimer's", "Chat Bot", "Latest News", "Team Members"],
 )
 
 
@@ -58,6 +59,8 @@ def main():
         home_page()
     if app_mode == "Predict Alzheimer's":
         prediction_page()
+    if app_mode == "Chat Bot":
+        chat_bot()
     if app_mode == "Latest News":
         news_page()
     if app_mode == "Team Members":
