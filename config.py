@@ -43,6 +43,7 @@ KEYWORD = "alzheimer"
 # CHATBOT PAGE
 HF_EMAIL = st.secrets['HF_GMAIL']
 HF_PASS = st.secrets['HF_PASS']    
+BASE_PROMPT = st.secrets['BASE_PROMPT']
 
 
 # TEAM MEMBERS PAGE
