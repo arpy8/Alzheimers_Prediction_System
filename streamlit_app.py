@@ -41,7 +41,7 @@ st.sidebar.image(SIDE_BANNER)
 st.sidebar.title("Alzheimer's Prediction System")
 app_mode = st.sidebar.selectbox(
     "Please navigate through the different sections of our website from here",
-    ["Home", "Predict Alzheimer's", "Chat Bot", "Latest News", "Team Members"],
+    ["Home", "Predict Alzheimer's", "ChatBot", "Latest News", "Team Members"],
 )
 
 
@@ -59,7 +59,7 @@ def main():
         home_page()
     if app_mode == "Predict Alzheimer's":
         prediction_page()
-    if app_mode == "Chat Bot":
+    if app_mode == "ChatBot":
         chat_bot()
     if app_mode == "Latest News":
         news_page()
