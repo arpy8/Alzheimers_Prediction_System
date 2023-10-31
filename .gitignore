@@ -1,0 +1,6 @@
+__pycache__/
+.conda/
+mlruns/
+
+.streamlit/secrets.toml
+logs.log
