@@ -75,14 +75,27 @@ The model was trained on a dataset collected from [Alzheimer’s Disease Neuroim
 This dataset is a comprehensive collection of clinical, imaging, and genetic data from individuals with Alzheimer's disease.
 
 ### Deployment
-The final Alzheimer's predcition model is deployed using streamlit: [Visit Site](https://alzheimers-prediction.streamlit.app)
+The final Alzheimer's predcition model is deployed on the following platforms:
+- Streamlit Share : [Visit Site](https://alzheimers-prediction.streamlit.app)
+- HuggingFace Spaces: [Visit Site](https://huggingface.co/spaces/arpy8/Alzheimers_Prediction_Clinical_Data)
 
 ### Team
-- [Arpit Sengar](https://github.com/arpy8)
-- [Siddharth Mohril](https://github.com/siddharth-mohril)
-- [Aditya Bhardwaj](https://github.com/adityabhardwajjj)
-- [Harshit Jain](https://github.com/harshitjainn)
-- [Aditya Jain](https://github.com/ajhasbeensummoned)
+<table style="width: 100%; border-collapse: collapse; text-align:center;">
+        <tr>
+            <th><a href="https://github.com/arpy8">Arpit Sengar</a></th>
+            <th><a href="https://github.com/siddharth-mohril">Siddharth Mohril</a></th>
+            <th><a href="https://github.com/adityabhardwajjj">Aditya Bhardwaj</a></th>
+            <th><a href="https://github.com/harshitjainn">Harshit Jain</a></th>
+            <th><a href="https://github.com/ajhasbeensummoned">Aditya Jain</a></th>
+        </tr>
+        <tr>
+            <td><img src="https://avatars.githubusercontent.com/arpy8" alt="Arpit Sengar"></td>
+            <td><img src="https://avatars.githubusercontent.com/siddharth-mohril" alt="Siddharth Mohril"></td>
+            <td><img src="https://avatars.githubusercontent.com/adityabhardwajjj" alt="Aditya Bhardwaj"></td>
+            <td><img src="https://avatars.githubusercontent.com/harshitjainn" alt="Harshit Jain"></td>
+            <td><img src="https://avatars.githubusercontent.com/ajhasbeensummoned" alt="Aditya Jain"></td>
+        </tr>
+</table>
 
 ---
 
